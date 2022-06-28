@@ -1,5 +1,4 @@
 const errorHandler = (err, req, res, next) => {
-  console.log(res.statusCode);
   const statusCode = res.statusCode ? res.statusCode : 500;
 
   res.status(statusCode);
