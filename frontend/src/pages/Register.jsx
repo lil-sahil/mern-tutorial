@@ -1,5 +1,5 @@
 // Components
-import Spinner from "../components/Header/Spinner/Spinner"
+import Spinner from "../components/Spinner/Spinner"
 
 import { useState, useEffect } from "react"
 import {FaUser} from 'react-icons/fa'
