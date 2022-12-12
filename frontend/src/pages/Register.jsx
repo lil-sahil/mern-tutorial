@@ -1,3 +1,6 @@
+// Components
+import Spinner from "../components/Header/Spinner/Spinner"
+
 import { useState, useEffect } from "react"
 import {FaUser} from 'react-icons/fa'
 import {useNavigate} from "react-router-dom"
@@ -58,6 +61,10 @@ const Register = () => {
 
         dispatch(register(userData))
     }
+  }
+
+  if (isLoading){
+    return <Spinner />
   }
   
   return (
